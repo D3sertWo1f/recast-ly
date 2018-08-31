@@ -1,10 +1,12 @@
 ## Mac OSX ##
 .DS_Store
 
-## Bower ##
-client/lib/react
-client/lib/jquery
-client/lib/lodash
+## NPM ##
+node_modules/
+
+## Compiled files ##
+compiled/
 
 ## API keys ##
-client/config/youtube.js
+src/config/youtube.js
+compiled/config/youtube.js
