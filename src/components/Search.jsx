@@ -10,7 +10,7 @@ class Search extends React.Component{
           <span className="glyphicon glyphicon-search"></span>
         </button>
       </div>
-    ); 
+    );
   }
 };
 

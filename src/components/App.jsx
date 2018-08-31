@@ -12,10 +12,10 @@ class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayer/>
+            <VideoPlayer video={window.exampleVideoData[0]}/>
           </div>
           <div className="col-md-5">
-            <VideoList/>
+            <VideoList videos={window.exampleVideoData}/>
           </div>
         </div>
       </div>
