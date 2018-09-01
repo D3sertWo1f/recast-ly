@@ -7,9 +7,8 @@ class App extends React.Component {
     }
     this.handleVideoClick = this.handleVideoClick.bind(this)
   }
-  handleVideoClick(video){
-    console.log(video)
-    this.setState({currentVideo: video})
+  handleVideoClick(index){
+    this.setState(() =>({currentVideo: window.exampleVideoData[index]}))
   }
 
   render(){
@@ -26,7 +25,7 @@ class App extends React.Component {
             <VideoPlayer video={this.state.currentVideo}/>
           </div>
           <div className="col-md-5">
-            <VideoList videos={this.state.videoList} listClick={this.handleVideoClick.bind(this)}/>
+            <VideoList videos={this.state.videoList} handleVideoClick={this.handleVideoClick}/>
           </div>
         </div>
       </div>
